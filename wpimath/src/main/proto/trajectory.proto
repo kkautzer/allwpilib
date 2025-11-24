@@ -5,6 +5,7 @@ package wpi.proto;
 import "geometry2d.proto";
 
 option java_package = "edu.wpi.first.math.proto";
+option java_outer_classname = "ProtobufTrajectory";
 
 message ProtobufTrajectoryState {
   double time = 1;
@@ -14,6 +15,6 @@ message ProtobufTrajectoryState {
   double curvature = 5;
 }
 
-message ProtobufTrajectory {
+message ProtobufTrajectoryMessage {
   repeated ProtobufTrajectoryState states = 2;
 }
